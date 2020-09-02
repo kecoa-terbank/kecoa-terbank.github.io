@@ -1,1 +1,220 @@
-<h2>jhsghj</h2>
+<html>
+  <head>
+    <title>KecoaTerbank</title>
+    <style>
+      *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #4099FF;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.profile {
+  max-width: 360px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.13);
+}
+.profile section:nth-of-type(1) {
+  position: relative;
+}
+.profile section:nth-of-type(1):after {
+  content: "";
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), black);
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0), black);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.profile section:nth-of-type(1) img {
+  width: 100%;
+  height: auto;
+}
+.profile section:nth-of-type(1) .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 10px;
+  text-align: center;
+  z-index: 2;
+}
+.profile section:nth-of-type(1) .text p {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.profile section:nth-of-type(1) .text a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.profile section:nth-of-type(2) {
+  width: 100%;
+  background: #fff;
+  padding: 50px 20px 25px;
+  position: relative;
+}
+.profile section:nth-of-type(2) .info {
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.profile section:nth-of-type(2) .info div {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.profile section:nth-of-type(2) .info div span {
+  display: block;
+}
+.profile section:nth-of-type(2) .info div span:nth-of-type(1) {
+  color: #4d4d4d;
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.profile section:nth-of-type(2) .info div span:nth-of-type(2) {
+  color: #4099FF;
+  font-size: 16px;
+  font-weight: 300;
+}
+.profile section:nth-of-type(2) .button {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.profile section:nth-of-type(2) .button a {
+  display: inline-block;
+  background: #4099FF;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 15px 50px 15px 90px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-transition: background 0.4s ease-in-out;
+  -moz-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+.profile section:nth-of-type(2) .button a:hover {
+  background: #0d7eff;
+}
+.profile section:nth-of-type(2) .button a svg {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 40px;
+  height: 40px;
+}
+.profile section:nth-of-type(2) .button a svg path {
+  fill: #fff;
+}
+.profile section:nth-of-type(2) > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  z-index: 0;
+  margin-top: -60%;
+  margin-left: -100%;
+}
+.profile section:nth-of-type(2) > svg path {
+  fill: #f7f7f7;
+}
+
+footer {
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+}
+footer a {
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: 300;
+  display: inline-block;
+  border-bottom: 2px dotted #fff;
+  -webkit-transition: border-color 0.4s ease-in-out;
+  -moz-transition: border-color 0.4s ease-in-out;
+  transition: border-color 0.4s ease-in-out;
+}
+footer a:hover {
+  border-color: #0d7eff;
+}
+
+    </style>
+<div class="profile">
+  <section>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/-_aKpGQt_400x400.jpg" alt="Dendi Rizky Sanjaya">
+    
+    <div class="text">
+      <p>Dendi Rizky Sanjaya</p>
+    </div>
+  </section>
+  
+  <section>
+    <div class="info">
+      <div>
+        <span>53</span>
+        <span>Tweets</span>
+      </div>
+      
+      <div>
+        <span>532</span>
+        <span>Following</span>
+      </div>
+      
+      <div>
+        <span>96</span>
+        <span>Followers</span>
+      </div>
+    </div>
