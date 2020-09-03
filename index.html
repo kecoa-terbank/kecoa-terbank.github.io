@@ -20,11 +20,13 @@ canvas {
   height: 100%;
 }
       .card {
-  position: fixed;
+        height: 300px;
+        width: 300px;
+   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
       .card-3 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
